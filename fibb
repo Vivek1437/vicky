@@ -1,0 +1,19 @@
+#!/bin/bash 
+
+length=$1
+num1=0
+num2=1
+
+echo "Fibobacci series"
+echo $num1
+echo $num2
+
+count=3
+while [ $count -le $length ]; do 
+   fibo=$(($num1 + $num2))
+   num1=$num2
+   num2=$fibo
+   echo $fibo
+   ((count++))
+done 	
+
